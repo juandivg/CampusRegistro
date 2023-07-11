@@ -1,20 +1,27 @@
 import os
+import core
 import acudientes
+def LoadInfoCampers():
+    global diccCampers
+    if (core.checkFile("campers.json")):
+        diccCampers = core.LoadInfo("campers.json")
+    else:
+        core.crearInfo("campers.json",diccCampers)
 def MainMenu():
     os.system("clear")
     mainMenu = True
     os.system("clear")
     print('+','-'*55,'+')
-    print("|{:^16}{}{:^17}|".format(' ','ADMINISTRACION DE COMPRAS',' '))
+    print("|{:^16}{}{:^16}|".format(' ','ADMINISTRACION DE CAMPERS',' '))
     print('+','-'*55,'+')
     print("1. Registrar camper")
     print("2. Buscar camper")
     print("3. Eliminar camper")
     print("4. Editar camper")
     print("5. Regresar menu principal")
-    opcion =int(input(":)_"))
+    opcion =int(input("Opcion: "))
     if (opcion == 1):
-        pass
+        core.registroCampers()
     elif (opcion == 2):
         pass
     elif (opcion == 3):
