@@ -7,7 +7,6 @@ def registroCampers():
     nombre=input("Ingrese su apellido: ")
     campers['Apellido':nombre]
     edad=int(input("Ingrese su edad: "))
-    
     campers['Edad':edad]
         
 def registroMenores():
