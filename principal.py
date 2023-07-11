@@ -32,3 +32,4 @@ if __name__=="__main__":
             campers.MainMenu()
         elif opcion==2:
             menu=False
+        print ("XD")
