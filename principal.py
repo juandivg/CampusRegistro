@@ -33,4 +33,4 @@ if __name__=="__main__":
         elif opcion==2:
             menu=False
         print ("XD")
-        print(":V")
+        print("Hola mundo")
